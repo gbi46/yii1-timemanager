@@ -13,8 +13,6 @@ class MainController extends Controller
 	
 	public function actionIndex()
 	{
-		//Yii::app()->theme = 'cleangrad';
-		//Yii::app()->theme = 'neutraldesk';
 		$this->render('index');
 	}
 }
