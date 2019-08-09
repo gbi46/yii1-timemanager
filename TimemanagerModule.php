@@ -18,11 +18,9 @@ class TimemanagerModule extends CWebModule
 	{
 		if (parent::beforeControllerAction($controller, $action))
 		{
-			//Yii::app()->theme = 'neutraldesk';
-			if (Yii::app()->user->role != '2')
-			{
-				Yii::app()->request->redirect(Yii::app()->homeUrl);
-			}
+			/*if (Yii::app()->user->role != '2') {
+					Yii::app()->request->redirect(Yii::app()->homeUrl);
+			}*/
 			
 			return true;
 		}
